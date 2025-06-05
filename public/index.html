@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Прогноз погоди</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Прогноз погоди</h1>
+
+   
+    <label for="citySelect">Оберіть місто:</label>
+    <select id="citySelect">
+      <option value="London">Лондон</option>
+      <option value="Kyiv">Київ</option>
+      <option value="Berlin">Берлін</option>
+      <option value="Paris">Париж</option>
+      <option value="Rome">Рим</option>
+    </select>
+    <button id="selectWeather">Показати погоду для вибраного міста</button>
+
+   
+    <div class="custom-input" style="margin-top: 30px;">
+      <label for="cityInput">Введіть місто:</label>
+      <input type="text" id="cityInput" placeholder="Введіть місто" />
+      <button id="searchWeather">Пошук</button>
+    </div>
+
+   
+    <div id="weather">
+      <h2 id="location"></h2>
+      <p id="temp"></p>
+      <p id="condition"></p>
+      <p id="wind"></p>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
